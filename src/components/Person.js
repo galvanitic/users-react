@@ -3,10 +3,12 @@ import React, { Component } from 'react';
 class Person extends Component {
     state = {
         infoDisplay: false,
-        displayClass: 'hide'
+        displayClass: 'hide',
+        details: 'show'
     }
     toggleInfo = () => {
         this.state.infoDisplay ? this.setState({displayClass: 'hide'}) : this.setState({displayClass: 'show'});
+        this.state.infoDisplay ? this.setState({details: 'show'}) : this.setState({details: 'hide'});
     }
     handleClick = () => {
         this.setState({infoDisplay: !this.state.infoDisplay});
@@ -33,7 +35,7 @@ class Person extends Component {
                         </ul>
                     </div>
                 </div>
-                <button onClick={this.handleClick}>More Info</button>
+                <button onClick={this.handleClick}>{this.state.details} details</button>
             </li>
         );
     }
