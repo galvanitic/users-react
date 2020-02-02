@@ -1,0 +1,119 @@
+@import url("https://use.typekit.net/yrp5mtf.css");
+
+body {
+    .hide {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+
+    .rolo-app {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+        button.rolodex {
+            margin-top: 2%;
+            width: 8%;
+            border: none;
+            padding: 10px 15px;
+            font-family: mr-eaves-modern, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+            background-color: rgb(41, 48, 88);
+            transition: all .22s;
+            transition-property: all;
+            transition-duration: 0.22s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            color: rgb(175, 187, 238);
+        }
+        button:hover {
+            cursor: pointer;
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+            filter: brightness(130%);
+        }
+        ul.rolodex-usrs {
+            // border: 1px dashed ;
+            width: 70%;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            li.contact-card {
+                background-color: rgb(175, 187, 238);
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                padding: 1% 1%;
+                margin: 25px 0;
+                align-items: center;
+                min-width: 35%;
+                box-shadow: inset rgb(68, 70, 100) 0px 0px 8px 2px;
+                .name {
+                    display: flex;
+                    flex-direction: row;
+                    font-family: mr-eaves-modern, sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    color: rgb(41, 48, 88);
+                    h1 {
+                        font-size: 60px;
+                    }
+                    h2 {
+                        font-size: 60px;
+                    }
+                }
+                .info {
+                    display: flex;
+                    flex-direction: row;
+                    .image-container {
+                        display: flex;
+                        flex-direction: column;
+                        img {
+                            border-radius: 100px;
+                        }
+                    }
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        li {
+                            background-color: rgb(140, 146, 179);
+                            margin: 10px 0;
+                            padding: 5px;
+                            color: rgb(41, 48, 88);
+                            text-align: left;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+                button {
+                    margin: 20px 0;
+                    color: rgb(175, 187, 238);
+                    padding: 5px 15px;
+                    font-family: mr-eaves-modern, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 20px;
+                    border: none;
+                    border-radius: 5px;
+                    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                    background-color: rgb(41, 48, 88);
+                    transition: all .22s;
+                    transition-property: all;
+                    transition-duration: 0.22s;
+                    transition-timing-function: ease;
+                    transition-delay: 0s;
+                }
+            }
+        }
+    }
+}

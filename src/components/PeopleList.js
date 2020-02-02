@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Person from './Person'
+import '../css/style.css';
 
 class PeopleList extends Component {
     state = {
-        users: []
+        users: [],
     }
 
     fetchUsrs = () => {
@@ -15,10 +16,10 @@ class PeopleList extends Component {
 
     render() {
         return (
-            <div>
-                <button onClick={this.fetchUsrs}>See Rolodex</button>
-                <ul>
-                    {this.state.users.map((person) => <Person key={person.login.uuid} person={person.name.first}>)}
+            <div className='rolo-app'>
+                <button className='rolodex' onClick={this.fetchUsrs}>Rolodex</button>
+                <ul className='rolodex-usrs'>
+                    {this.state.users.map((person) => <Person key={person.login.uuid} person={person} />)}
                 </ul>
             </div>
         );
